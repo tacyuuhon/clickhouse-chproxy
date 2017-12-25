@@ -12,8 +12,24 @@ This is a Docker mirror of a chproxy.Help document, please refer to:[chproxy](ht
 * `1.0.1` [(1.0.1/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.0.1/Dockerfile)
 * `1.0.0` [(1.0.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.0.0/Dockerfile)
 
-# Run it!
+# Run
 ```
 docker run -it -v ./config.yml:/opt/config.yml tacyuuhon/clickhouse-chproxy
 ```
+
+# Build
+If you want to rebuild images.
+You can be like this:
+```
+# v1.0.0 ~ v1.5.0
+git clone git@github.com:tacyuuhon/clickhouse-chproxy.git
+git checkhout {branch} # branch=v1.0.0 ~ v1.5.0
+docker build --no-cache -t {namespace}/{repository_name} . 
+
+# v1.6.0 ~ v1.10.0
+git clone git@github.com:tacyuuhon/clickhouse-chproxy.git
+git checkhout master
+docker build --build-arg CHPROXY_VERSION={version} --no-cache -t {namespace}/{repository_name} . # version=1.6.0~1.10.0
+```
+
 
