@@ -30,7 +30,7 @@ docker build --no-cache -t {namespace}/{repository_name} .
 # v1.6.0 ~ v1.10.0
 git clone git@github.com:tacyuuhon/clickhouse-chproxy.git
 git checkhout master
-# version=1.6.0~1.10.0
+# version=1.6.0 ~ 1.10.0
 docker build --build-arg CHPROXY_VERSION={version} --no-cache -t {namespace}/{repository_name} . 
 ```
 
