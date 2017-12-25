@@ -14,7 +14,7 @@ This is a Docker mirror of a chproxy.Help document, please refer to:[chproxy](ht
 
 # Run
 ```
-docker run -it -v ./config.yml:/opt/config.yml tacyuuhon/clickhouse-chproxy
+docker run -it -v {config_path}/config.yml:/opt/config.yml tacyuuhon/clickhouse-chproxy
 ```
 
 # Build
