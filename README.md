@@ -24,8 +24,8 @@ You can be like this:
 ```
 # v1.0.0 ~ v1.5.0
 git clone git@github.com:tacyuuhon/clickhouse-chproxy.git
-# branch=v1.0.0 ~ v1.5.0
 cd clickhouse-chproxy
+# branch=v1.0.0 ~ v1.5.0
 git checkout {branch} 
 docker build --no-cache -t {namespace}/{repository_name} . 
 
