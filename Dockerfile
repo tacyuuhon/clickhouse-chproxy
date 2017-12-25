@@ -3,7 +3,7 @@ FROM debian:stable-slim
 MAINTAINER tacyuuhon "tacyuuhon@gmail.com"
 
 ARG SRC_DIR=/opt
-ARG CHPROXY_VERSION=1.4.0
+ARG CHPROXY_VERSION=1.5.0
 ENV CHPROXY_CONFIG=${SRC_DIR}/config.yml
 
 RUN apt-get update -y && \
