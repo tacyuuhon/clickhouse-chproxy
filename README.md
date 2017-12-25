@@ -23,13 +23,15 @@ You can be like this:
 ```
 # v1.0.0 ~ v1.5.0
 git clone git@github.com:tacyuuhon/clickhouse-chproxy.git
-git checkhout {branch} # branch=v1.0.0 ~ v1.5.0
+# branch=v1.0.0 ~ v1.5.0
+git checkhout {branch} 
 docker build --no-cache -t {namespace}/{repository_name} . 
 
 # v1.6.0 ~ v1.10.0
 git clone git@github.com:tacyuuhon/clickhouse-chproxy.git
 git checkhout master
-docker build --build-arg CHPROXY_VERSION={version} --no-cache -t {namespace}/{repository_name} . # version=1.6.0~1.10.0
+# version=1.6.0~1.10.0
+docker build --build-arg CHPROXY_VERSION={version} --no-cache -t {namespace}/{repository_name} . 
 ```
 
 
