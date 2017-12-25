@@ -14,7 +14,7 @@ RUN apt-get update -y && \
 WORKDIR ${SRC_DIR}
 
 ADD https://raw.githubusercontent.com/Vertamedia/chproxy/${CHPROXY_VERSION}/config/testdata/full.yml config.yml
-ADD https://github.com/Vertamedia/chproxy/releases/download/${CHPROXY_VERSION}/chproxy-linux-amd64.tar.gz chproxy-linux-amd64.tar.gz
+ADD https://github.com/Vertamedia/chproxy/releases/download/${CHPROXY_VERSION}/chproxy-linux-amd64-${CHPROXY_VERSION}.tar.gz chproxy-linux-amd64.tar.gz
 
 RUN tar -zxf chproxy-linux-amd64.tar.gz && \
     rm -rf chproxy-linux-amd64.tar.gz
