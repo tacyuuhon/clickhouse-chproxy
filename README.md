@@ -11,3 +11,9 @@ This is a Docker mirror of a chproxy.Help document, please refer to:[chproxy](ht
 * `1.1.0` [(1.1.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.1.0/Dockerfile)
 * `1.0.1` [(1.0.1/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.0.1/Dockerfile)
 * `1.0.0` [(1.0.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.0.0/Dockerfile)
+
+# Run it!
+```
+docker run -it -v ./config.yml:/opt/config.yml tacyuuhon/clickhouse-chproxy
+```
+
