@@ -1,5 +1,5 @@
 # clickhouse-chproxy
-This is a Docker mirror of a chproxy.Help document, please refer to:[chproxy](https://github.com/Vertamedia/chproxy)
+This is a Docker mirror of a chproxy.Help document, please refer to:[readme](https://github.com/Vertamedia/chproxy)
 
 # Supported tags and respective `Dockerfile` links
 
