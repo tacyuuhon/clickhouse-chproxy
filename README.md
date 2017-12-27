@@ -37,7 +37,7 @@ git checkout master
 docker build --build-arg CHPROXY_VERSION={version} --no-cache -t {namespace}/{repository_name} . 
 ```
 
-# Reload config.yml
+# Reload `config.yml`
 If you modify `config.yml` you don't need to restart the chproxy.
 You can use docker to send SIGHUP to reload the `config.yml`
 ```
