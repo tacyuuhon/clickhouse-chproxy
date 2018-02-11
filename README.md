@@ -29,11 +29,11 @@ cd clickhouse-chproxy
 git checkout {branch} 
 docker build --no-cache -t {namespace}/{repository_name} . 
 
-# v1.6.0 ~ v1.10.2
+# v1.6.0 ~ v1.10.3
 git clone git@github.com:tacyuuhon/clickhouse-chproxy.git
 cd clickhouse-chproxy
 git checkout master
-# version=1.6.0 ~ 1.10.2
+# version=1.6.0 ~ 1.10.3
 docker build --build-arg CHPROXY_VERSION={version} --no-cache -t {namespace}/{repository_name} . 
 ```
 
