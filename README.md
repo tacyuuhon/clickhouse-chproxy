@@ -20,7 +20,7 @@ cd clickhouse-chproxy
 git checkout v1.0.0
 docker build --no-cache -t {namespace}/{repository_name} . 
 
-```
+
 
 # Reload config.yml
 If you modify `config.yml` you don't need to restart the chproxy.
