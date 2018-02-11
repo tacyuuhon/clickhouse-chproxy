@@ -13,6 +13,9 @@ Help document, please refer to:[readme](https://github.com/Vertamedia/chproxy)
 * `1.0.1` [(1.0.1/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.0.1/Dockerfile)
 * `1.0.0` [(1.0.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.0.0/Dockerfile)
 
+Link on docker hub: [tacyuuhon/clickhouse-chproxy](https://hub.docker.com/r/tacyuuhon/clickhouse-chproxy/)
+
+
 # Run
 ```
 docker run -it -v {config_path}/config.yml:/opt/config.yml tacyuuhon/clickhouse-chproxy
