@@ -21,7 +21,6 @@ git clone git@github.com:tacyuuhon/clickhouse-chproxy.git
 cd clickhouse-chproxy
 git checkout 1.3.0
 docker build --no-cache -t {namespace}/{repository_name} . 
-
 ```
 
 # Reload config.yml
