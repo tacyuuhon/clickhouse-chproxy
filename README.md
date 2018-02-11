@@ -5,7 +5,6 @@ Help document, please refer to:[readme](https://github.com/Vertamedia/chproxy)
 # Supported tags and respective `Dockerfile` links
 
 * `1.2.0` [(1.2.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.2.0/Dockerfile)
-* `1.1.0` [(1.1.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.1.0/Dockerfile)
 
 # Run
 ```
