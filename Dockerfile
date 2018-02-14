@@ -4,8 +4,7 @@ MAINTAINER tacyuuhon "tacyuuhon@gmail.com"
 
 ARG SRC_DIR=/opt
 
-ARG CHPROXY_VERSION=1.0.1
-
+ARG CHPROXY_VERSION=1.0.0
 
 ENV CHPROXY_CONFIG=${SRC_DIR}/config.yml
 
@@ -18,7 +17,7 @@ WORKDIR ${SRC_DIR}
 
 ADD https://raw.githubusercontent.com/Vertamedia/chproxy/${CHPROXY_VERSION}/config/testdata/full.yml config.yml
 
-ADD https://github.com/Vertamedia/chproxy/files/1374503/chproxy_linux_amd64.tar.gz chproxy-linux-amd64.tar.gz
+ADD https://github.com/Vertamedia/chproxy/files/1372546/chproxy_linux_amd64.tar.gz chproxy-linux-amd64.tar.gz
 
 
 RUN tar -zxf chproxy-linux-amd64.tar.gz && \
