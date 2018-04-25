@@ -6,6 +6,7 @@ ARG SRC_DIR=/opt
 ARG CHPROXY_NAME=chproxy
 ARG CHPROXY_VERSION=1.6.0
 ENV CHPROXY_CONFIG=${SRC_DIR}/config.yml
+ENV CHPROXY_APP_NAME=${CHPROXY_NAME}
 
 RUN apt-get update -y && \
     apt-get autoremove -y && \
@@ -20,4 +21,4 @@ ADD https://github.com/Vertamedia/chproxy/releases/download/${CHPROXY_VERSION}/c
 RUN tar -zxf chproxy-linux-amd64.tar.gz && \
     rm -rf chproxy-linux-amd64.tar.gz
 
-ENTRYPOINT exec ./${CHPROXY_NAME} -config ${CHPROXY_CONFIG}
+ENTRYPOINT exec ./${CHPROXY_APP_NAME} -config ${CHPROXY_CONFIG}
