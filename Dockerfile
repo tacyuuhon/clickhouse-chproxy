@@ -3,6 +3,7 @@ FROM debian:stable-slim
 MAINTAINER tacyuuhon "tacyuuhon@gmail.com"
 
 ARG SRC_DIR=/opt
+ARG CHPROXY_NAME=chproxy
 ARG CHPROXY_VERSION=1.6.0
 ENV CHPROXY_CONFIG=${SRC_DIR}/config.yml
 
@@ -19,4 +20,4 @@ ADD https://github.com/Vertamedia/chproxy/releases/download/${CHPROXY_VERSION}/c
 RUN tar -zxf chproxy-linux-amd64.tar.gz && \
     rm -rf chproxy-linux-amd64.tar.gz
 
-ENTRYPOINT exec ./chproxy -config ${CHPROXY_CONFIG}
+ENTRYPOINT exec ./${CHPROXY_NAME} -config ${CHPROXY_CONFIG}
