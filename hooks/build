@@ -1,0 +1,1 @@
+docker build --build-arg CHPROXY_VERSION=$CHPROXY_BUILD_VERSION --no-cache -t tacyuuhon/clickhouse-chproxy .
