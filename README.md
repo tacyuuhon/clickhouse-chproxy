@@ -1,6 +1,6 @@
 # clickhouse-chproxy
 This is a Docker images of a [chproxy](https://github.com/Vertamedia/chproxy).
-Help document, please refer to:[readme](https://github.com/Vertamedia/chproxy)
+Help document, please refer to:[README](https://github.com/Vertamedia/chproxy)
 
 # Supported tags and respective `Dockerfile` links
 
