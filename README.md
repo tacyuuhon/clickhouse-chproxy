@@ -4,7 +4,7 @@ Help document, please refer to:[readme](https://github.com/Vertamedia/chproxy)
 
 # Supported tags and respective `Dockerfile` links
 
-* `1.6.0 ~ 1.13.0`,`latest` [(1.13.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/master/Dockerfile)
+* `1.6.0 ~ 1.13.2`,`latest` [(1.13.2/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/master/Dockerfile)
 * `1.5.0` [(1.5.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.5.0/Dockerfile)
 * `1.4.0` [(1.4.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.4.0/Dockerfile)
 * `1.3.0` [(1.3.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.3.0/Dockerfile)
@@ -32,11 +32,11 @@ cd clickhouse-chproxy
 git checkout {branch} 
 docker build --no-cache -t {namespace}/{repository_name} . 
 
-# v1.6.0 ~ v1.13.0
+# v1.6.0 ~ v1.13.2
 git clone git@github.com:tacyuuhon/clickhouse-chproxy.git
 cd clickhouse-chproxy
 git checkout master
-# version=1.6.0 ~ 1.13.0
+# version=1.6.0 ~ 1.13.2
 docker build --build-arg CHPROXY_VERSION={version} --no-cache -t {namespace}/{repository_name} . 
 ```
 
