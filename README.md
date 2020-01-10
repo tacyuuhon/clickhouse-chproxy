@@ -4,6 +4,7 @@ Help document, please refer to:[README](https://github.com/Vertamedia/chproxy)
 
 # Supported tags and respective `Dockerfile` links
 
+* `1.13.2-1`,`latest` [(1.13.2-1/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/master/Dockerfile)
 * `1.6.0 ~ 1.13.2`,`latest` [(1.13.2/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/master/Dockerfile)
 * `1.5.0` [(1.5.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.5.0/Dockerfile)
 * `1.4.0` [(1.4.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.4.0/Dockerfile)
@@ -14,6 +15,17 @@ Help document, please refer to:[README](https://github.com/Vertamedia/chproxy)
 * `1.0.0` [(1.0.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.0.0/Dockerfile)
 
 Link on docker hub: [tacyuuhon/clickhouse-chproxy](https://hub.docker.com/r/tacyuuhon/clickhouse-chproxy/)
+
+> Tip:
+>
+> `1.13.2-1` is a special version. 
+> Just added a `curl` to the container.
+> You can use it for [healthcheck](https://docs.docker.com/compose/compose-file/#healthcheck)  
+> Thank you for @[**yohannj**](https://github.com/yohannj) commit the [PR](https://github.com/tacyuuhon/clickhouse-chproxy/pull/24)
+
+
+
+
 
 
 # Run
