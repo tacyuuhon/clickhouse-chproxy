@@ -4,6 +4,8 @@ Help document, please refer to:[README](https://github.com/Vertamedia/chproxy)
 
 # Supported tags and respective `Dockerfile` links
 
+* `1.14.0`,`latest` [(1.14.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/master/Dockerfile)
+* `1.14.0-curl` [(1.14.0-curl/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/curl/Dockerfile)
 * `1.13.2-1`,`latest` [(1.13.2-1/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/master/Dockerfile)
 * `1.6.0 ~ 1.13.2` [(1.13.2/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/master/Dockerfile)
 * `1.5.0` [(1.5.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.5.0/Dockerfile)
@@ -22,6 +24,9 @@ Link on docker hub: [tacyuuhon/clickhouse-chproxy](https://hub.docker.com/r/tacy
 > Just added a `curl` to the container.
 > You can use it for [healthcheck](https://docs.docker.com/compose/compose-file/#healthcheck)  
 > Thank you for @[**yohannj**](https://github.com/yohannj) commit the [PR](https://github.com/tacyuuhon/clickhouse-chproxy/pull/24)
+> 
+> `1.14.0-curl` tag include curl command
+> `1.14.0` tag not include curl command
 
 
 
@@ -44,11 +49,11 @@ cd clickhouse-chproxy
 git checkout {branch} 
 docker build --no-cache -t {namespace}/{repository_name} . 
 
-# v1.6.0 ~ v1.13.2
+# v1.6.0 ~ v1.14.0
 git clone git@github.com:tacyuuhon/clickhouse-chproxy.git
 cd clickhouse-chproxy
 git checkout master
-# version=1.6.0 ~ 1.13.2
+# version=1.6.0 ~ 1.14.0
 docker build --build-arg CHPROXY_VERSION={version} --no-cache -t {namespace}/{repository_name} . 
 ```
 
