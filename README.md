@@ -24,7 +24,7 @@ Link on docker hub: [tacyuuhon/clickhouse-chproxy](https://hub.docker.com/r/tacy
 > Thank you for @[**yohannj**](https://github.com/yohannj) commit the [PR](https://github.com/tacyuuhon/clickhouse-chproxy/pull/24)
 > 
 > `1.14.0-curl` tag include curl command  
-> `1.14.0` tag not include curl command
+> `1.14.0`, `latest` tag not include curl command
 
 
 
