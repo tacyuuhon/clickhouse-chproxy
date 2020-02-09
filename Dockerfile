@@ -10,7 +10,6 @@ ENV CHPROXY_APP_NAME=${CHPROXY_NAME}
 ENV CHPROXY_BUILD_VERSION=${CHPROXY_VERSION}
 
 RUN apt-get update -y && \
-    apt-get install curl -y && \
     apt-get autoremove -y && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
