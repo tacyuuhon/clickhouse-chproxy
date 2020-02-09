@@ -4,10 +4,9 @@ Help document, please refer to:[README](https://github.com/Vertamedia/chproxy)
 
 # Supported tags and respective `Dockerfile` links
 
-* `1.14.0`,`latest` [(1.14.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/master/Dockerfile)
-* `1.14.0-curl` [(1.14.0-curl/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/curl/Dockerfile)
+* `1.13.2-1`, `1.14.0-curl` [(1.14.0-curl/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/curl/Dockerfile)
 * `1.13.2-1`,`latest` [(1.13.2-1/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/master/Dockerfile)
-* `1.6.0 ~ 1.13.2` [(1.13.2/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/master/Dockerfile)
+* `1.6.0 ~ `1.14.0`,`latest` [(1.14.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/master/Dockerfile)
 * `1.5.0` [(1.5.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.5.0/Dockerfile)
 * `1.4.0` [(1.4.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.4.0/Dockerfile)
 * `1.3.0` [(1.3.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/v1.3.0/Dockerfile)
