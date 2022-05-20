@@ -1,8 +1,10 @@
 # clickhouse-chproxy
+
 This is a Docker images of a [chproxy](https://github.com/Vertamedia/chproxy).
 Help document, please refer to:[README](https://github.com/Vertamedia/chproxy)
 
-# Supported tags and respective `Dockerfile` links
+## Supported tags and respective `Dockerfile` links
+
 
 * `1.6.0 ~ 1.14.0`, `latest` [(1.14.0/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/master/Dockerfile)
 * `1.13.2-1`, `1.14.0-curl` [(1.14.0-curl/Dockerfile)](https://github.com/tacyuuhon/clickhouse-chproxy/blob/curl/Dockerfile)
@@ -22,24 +24,22 @@ Link on docker hub: [tacyuuhon/clickhouse-chproxy](https://hub.docker.com/r/tacy
 > Just added a `curl` to the container.
 > You can use it for [healthcheck](https://docs.docker.com/compose/compose-file/#healthcheck)  
 > Thank you for @[**yohannj**](https://github.com/yohannj) commit the [PR](https://github.com/tacyuuhon/clickhouse-chproxy/pull/24)
-> 
+>
 > `1.14.0-curl` tag include curl command  
 > `1.14.0`, `latest` tag not include curl command
 
+## Run
 
-
-
-
-
-# Run
-```
+```bash
 docker run -it -v {config_path}/config.yml:/opt/config.yml tacyuuhon/clickhouse-chproxy
 ```
 
-# Build
+## Build
+
 If you want to rebuild images.
 You can be like this:
-```
+
+```bash
 # v1.0.0 ~ v1.5.0
 git clone git@github.com:tacyuuhon/clickhouse-chproxy.git
 cd clickhouse-chproxy
@@ -55,10 +55,11 @@ git checkout master
 docker build --build-arg CHPROXY_VERSION={version} --no-cache -t {namespace}/{repository_name} . 
 ```
 
-# Reload config.yml
+## Reload config.yml
+
 If you modify `config.yml` you don't need to restart the chproxy.
 You can use docker to send SIGHUP to reload the `config.yml`
-```
+
+```bash
 docker kill --signal="SIGHUP" {CONTAINER_ID|CONTAINER_NAME}
 ```
-
