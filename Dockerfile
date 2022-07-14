@@ -1,6 +1,6 @@
 FROM debian:stable-slim
 
-MAINTAINER tacyuuhon "tacyuuhon@gmail.com"
+LABEL org.opencontainers.image.authors="tacyuuhon@gmail.com"
 
 ARG SRC_DIR=/opt
 ARG CHPROXY_NAME=chproxy
