@@ -29,7 +29,7 @@ ENTRYPOINT exec ./${CHPROXY_APP_NAME} -config ${CHPROXY_CONFIG}
 
 FROM platform as arm
 ADD https://raw.githubusercontent.com/ContentSquare/chproxy/v${CHPROXY_BUILD_VERSION}/config/testdata/full.yml config.yml
-ADD https://github.com/ContentSquare/chproxy/releases/download/v${CHPROXY_BUILD_VERSION}/chproxy_${CHPROXY_BUILD_VERSION}_linux_arm64.tar.gz chproxy-linux-amd64.tar.gz
+ADD https://github.com/ContentSquare/chproxy/releases/download/v${CHPROXY_BUILD_VERSION}/chproxy_${CHPROXY_BUILD_VERSION}_linux_arm64.tar.gz chproxy-linux-arm64.tar.gz
 
 RUN tar -zxf chproxy-linux-arm64.tar.gz && \
     rm -rf chproxy-linux-arm64.tar.gz
