@@ -42,7 +42,8 @@ jobs:
           
   docker-arm:
     runs-on: ubuntu-latest
-    DOCKER_TARGET_PLATFORM: linux/arm/v7
+    env:
+      DOCKER_TARGET_PLATFORM: linux/arm/v7
     steps:
       -
         name: Checkout
