@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM --platform=$BUILDPLATFORM debian:stable-slim
 
 LABEL org.opencontainers.image.authors="tacyuuhon@gmail.com"
 
@@ -18,9 +18,9 @@ RUN apt-get update -y && \
 WORKDIR ${SRC_DIR}
 
 ADD https://raw.githubusercontent.com/ContentSquare/chproxy/v${CHPROXY_BUILD_VERSION}/config/testdata/full.yml config.yml
-ADD https://github.com/ContentSquare/chproxy/releases/download/v${CHPROXY_BUILD_VERSION}/chproxy_${CHPROXY_BUILD_VERSION}_linux_${BUILDARCH}.tar.gz chproxy-linux-${BUILDARCH}.tar.gz
+ADD https://github.com/ContentSquare/chproxy/releases/download/v${CHPROXY_BUILD_VERSION}/chproxy_${CHPROXY_BUILD_VERSION}_linux_$BUILDARCH.tar.gz chproxy-linux-$BUILDARCH.tar.gz
 
-RUN tar -zxf chproxy-linux-${BUILDARCH}.tar.gz && \
-    rm -rf chproxy-linux-${BUILDARCH}.tar.gz
+RUN tar -zxf chproxy-linux-$BUILDARCH.tar.gz && \
+    rm -rf chproxy-linux-$BUILDARCH.tar.gz
 
 ENTRYPOINT exec ./${CHPROXY_APP_NAME} -config ${CHPROXY_CONFIG}
