@@ -1,4 +1,4 @@
-FROM debian:stable-slim
+FROM debian:stable-slim as platform
 
 LABEL org.opencontainers.image.authors="tacyuuhon@gmail.com"
 
