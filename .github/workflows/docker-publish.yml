@@ -42,18 +42,9 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          platforms: linux/amd64
-          target: amd64
+          platforms: linux/amd64, linux/arm64
+          target: ${TARGETARCH}
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-      -
-        name: Build arm64 and push
-        uses: docker/build-push-action@v3
-        with:
-          context: .
-          platforms: linux/arm64
-          target: arm
-          push: ${{ github.event_name != 'pull_request' }}
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+
