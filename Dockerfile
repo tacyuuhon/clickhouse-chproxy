@@ -1,4 +1,4 @@
-FROM --platform=$BUILDPLATFORM debian:stable-slim
+FROM debian:stable-slim
 
 LABEL org.opencontainers.image.authors="tacyuuhon@gmail.com"
 
