@@ -1,3 +1,7 @@
+> [!WARNING]
+> This repository has been deprecated.  
+> Please use Please use the official image. [Installation](https://www.chproxy.org/install/#docker)
+
 # clickhouse-chproxy
 
 This is a Docker images of a [chproxy](https://github.com/Vertamedia/chproxy).
