@@ -1,6 +1,6 @@
 > [!WARNING]
 > This repository has been deprecated.  
-> Please use Please use the official image. [Installation](https://www.chproxy.org/install/#docker)
+> Please use the official image. [Installation](https://www.chproxy.org/install/#docker)
 
 # clickhouse-chproxy
 
